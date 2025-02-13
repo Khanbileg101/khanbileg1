@@ -28,14 +28,14 @@ export default function Json() {
                 red
             </button>
 
-            <button className="bg-blue-800 border p-4 m-4"
-            onClick={() => setColor("blue")}>
-                blue
-            </button>
-
             <button className="bg-green-800 border p-4 m-4"
             onClick={() => setColor("green")}>
                 green
+            </button>
+
+            <button className="bg-blue-800 border p-4 m-4"
+            onClick={() => setColor("blue")}>
+                blue
             </button>
         </div>
     )
