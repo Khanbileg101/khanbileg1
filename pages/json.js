@@ -5,9 +5,7 @@ export default function Json() {
     const [search, setSearch] = useState(" ");
     const [isGridView, setIsGridView] = useState(true);
 
-    const filteredClothes = data?.clothes?.filter((item) =>
-        item.name.toLowerCase().includes(search.toLowerCase())
-    );
+    
 
     useEffect(() => {
         const fetchData = async () => {
@@ -106,6 +104,10 @@ export default function Json() {
 
         fetchData();
     }, []);
+
+    const filteredClothes = data?.clothes?.filter((item) =>
+        item.name.toLowerCase().includes(search.toLowerCase())
+    );
 
     console.log(data.clothes);
     console.log(data.intsruments);
