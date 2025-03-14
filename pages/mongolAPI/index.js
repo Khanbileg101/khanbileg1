@@ -1,6 +1,10 @@
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
+
 export default function Json() {
+    const router = useRouter();
+    const [loading, setLoading] = useState(false);
     const [data, setData] = useState([]);
     const [search, setSearch] = useState("");
     const [isGridView, setIsGridView] = useState(true);
@@ -29,15 +33,17 @@ export default function Json() {
                 });
 
                 setData(mergedData);
+
             } catch (error) {
                 console.error("Error fetching data:", error);
+                setLoading(false);
             }
         };
 
         fetchAllData();
     }, []);
 
-    const filteredData = data.filter(item => 
+    const filteredData = (data || []).filter(item => 
         item?.name?.toLowerCase().includes(search.toLowerCase())
     );
     
@@ -59,7 +65,7 @@ export default function Json() {
                 </button>
             </div>
 
-            {filteredData.length > 0 ? (
+            {(filteredData || []).length > 0 ? (
                 isGridView ? (
                     <div className="grid grid-cols-4 gap-4 m-4">
                         {filteredData.map((item) => (
@@ -72,6 +78,7 @@ export default function Json() {
                                 <p>{item.description}</p>
                                 <p className="font-bold">{item.timePeriod}</p>
                                 <p className="font-bold">{item?.materials}</p>
+                                <p className="font-semibold">{item.linguistic}</p>
                             </div>
                         ))}
                     </div>
