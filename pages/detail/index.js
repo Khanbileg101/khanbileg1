@@ -33,11 +33,7 @@ export default function Json() {
 
         fetchAllData();
     }, []);
-<<<<<<< HEAD
  
-=======
-
->>>>>>> 82c9652db52192215c506750da1647ae88bbda69
     const filteredData = data.filter(item => 
         item?.name?.toLowerCase().includes(search.toLowerCase())
     );
@@ -50,19 +46,11 @@ export default function Json() {
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
                     placeholder="Search..."
-<<<<<<< HEAD
                     className="flex-grow mb-4 p-2 rounded bg-gray-800 border border-[#A38970] text-gray-300 shadow-lg focus:ring-2 focus:ring-gray-500"
                 />
                 <button
                     onClick={() => setIsGridView(!isGridView)}
                     className="ml-4 px-5 py-3 bg-[#a97856] text-gray-300 font-medium rounded-lg shadow-md hover:bg-[#A38970] transition-transform transform hover:scale-105"
-=======
-                    className="flex-grow mb-4 p-2 rounded bg-gray-800 border border-gray-700 text-gray-300 shadow-lg focus:ring-2 focus:ring-gray-500"
-                />
-                <button
-                    onClick={() => setIsGridView(!isGridView)}
-                    className="ml-4 px-5 py-3 bg-gray-700 text-gray-300 font-medium rounded-lg shadow-md hover:bg-gray-600 transition-transform transform hover:scale-105"
->>>>>>> 82c9652db52192215c506750da1647ae88bbda69
                 >
                     {isGridView ? "List View" : "Grid View"}
                 </button>
@@ -75,11 +63,7 @@ export default function Json() {
                             <button 
                                 key={item.id} 
                                 onClick={() => router.push(`/detail/${item.category}/${item.id}`)}
-<<<<<<< HEAD
                                 className="border border-[#A38970] text-gray-200 bg-gray-800 shadow-md rounded-lg p-4 text-center hover:bg-[#A38970] transition"
-=======
-                                className="border border-gray-700 text-gray-200 bg-gray-800 shadow-md rounded-lg p-4 text-center hover:bg-gray-700 transition"
->>>>>>> 82c9652db52192215c506750da1647ae88bbda69
                             >
                                 <img src={item?.images?.[0]} className="w-full h-64 rounded-xl object-cover" alt={item.name} />
                                 <p className="font-bold mt-2">{item.name}</p>
@@ -98,15 +82,9 @@ export default function Json() {
                             <div 
                                 key={item.id} 
                                 onClick={() => router.push(`/detail/${item.category}/${item.id}`)}
-<<<<<<< HEAD
                                 className="flex items-start border border-[#A38970] text-gray-200 bg-gray-800 shadow-md rounded-lg p-4 cursor-pointer hover:bg-[#A38970] transition"
                             >
                                 <img src=   {item?.images?.[0]} className="w-32 h-32 rounded-xl object-cover" alt={item.name} />
-=======
-                                className="flex items-start border border-gray-700 text-gray-200 bg-gray-800 shadow-md rounded-lg p-4 cursor-pointer hover:bg-gray-700 transition"
-                            >
-                                <img src={item?.images?.[0]} className="w-32 h-32 rounded-xl object-cover" alt={item.name} />
->>>>>>> 82c9652db52192215c506750da1647ae88bbda69
                                 <div className="ml-4">
                                     <p className="font-bold">{item.name}</p>
                                     <p>{item.description}</p>
@@ -121,17 +99,9 @@ export default function Json() {
                     </div>
                 )
             ) : (
-<<<<<<< HEAD
                 
                 <p className="text-center text-gray-400 font-bold mt-5">No results found</p>
             )}
         </div>
     );  
 }
-=======
-                <p className="text-center text-gray-400 font-bold mt-10">No results found</p>
-            )}
-        </div>
-    );
-}
->>>>>>> 82c9652db52192215c506750da1647ae88bbda69
