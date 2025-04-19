@@ -24,7 +24,7 @@ export default function Toki() {
             <div className="bg-white h-[80px] w-full flex items-center justify-between px-4 sm:px-10 md:px-20 pl-4 sm:pl-10 md:pl-20 sticky top-0 shadow-md z-50 ">
              <img 
                src="https://www.toki.mn/wp-content/uploads/2022/08/Asset-1@3x.png"
-               className="w-[120px] hover:scale-105 transition duration-300  "
+               className="w-[120px] hover:scale-105 transition duration-300 cursor-pointer  "
                onClick={() => router.push("/")}
              ></img>
             <div className="hidden sm:flex space-x-5 flex-wrap justify-end text-sm pr-4 sm:pr-10 md:pr-20 ">

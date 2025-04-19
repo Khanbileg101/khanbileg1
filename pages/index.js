@@ -21,20 +21,6 @@ export default function Home() {
         </button>
 
         <button
-          onClick={() => router.push("/season1/biedaalt")}
-          className="bg-gray-800 shadow-md rounded-2xl p-6 transition-shadow duration-300 group relative hover:ring-2 hover:ring-gray-500 hover:ring-offset-2 hover:ring-offset-gray-900"
-          aria-label="Go to Project"
-        >
-          <div className="absolute inset-0 rounded-2xl bg-gray-500 opacity-20 blur-lg group-hover:opacity-50 transition-opacity duration-300"></div>
-          <h2 className="relative text-2xl font-semibold mb-4 text-center text-gray-300 group-hover:text-gray-100 transition-colors">
-            Project
-          </h2>
-          <div className="relative bg-gray-700 w-full h-48 flex items-center justify-center rounded-xl overflow-hidden group-hover:scale-105 transition-transform duration-300">
-            <img src="/project.png" alt="Project Thumbnail" className="object-cover w-full h-full" />
-          </div>
-        </button>
-
-        <button
           onClick={() => router.push("/detail")}
           className="bg-gray-800 shadow-md rounded-2xl p-6 transition-shadow duration-300 group relative hover:ring-2 hover:ring-gray-500 hover:ring-offset-2 hover:ring-offset-gray-900"
           aria-label="Go to Season 2"
@@ -45,6 +31,20 @@ export default function Home() {
           </h2>
           <div className="relative bg-gray-700 w-full h-48 flex items-center justify-center rounded-xl overflow-hidden group-hover:scale-105 transition-transform duration-300">
             <img src="/khanbu.png" alt="Season 2 Thumbnail" className="object-cover w-full h-full" />
+          </div>
+        </button>
+
+        <button
+          onClick={() => router.push("/toki")}
+          className="bg-gray-800 shadow-md rounded-2xl p-6 transition-shadow duration-300 group relative hover:ring-2 hover:ring-gray-500 hover:ring-offset-2 hover:ring-offset-gray-900"
+          aria-label="Go to toki"
+        >
+          <div className="absolute inset-0 rounded-2xl bg-gray-500 opacity-20 blur-lg group-hover:opacity-50 transition-opacity duration-300"></div>
+          <h2 className="relative text-2xl font-semibold mb-4 text-center text-gray-300 group-hover:text-gray-100 transition-colors">
+            Toki
+          </h2>
+          <div className="relative bg-gray-700 w-full h-48 flex items-center justify-center rounded-xl overflow-hidden group-hover:scale-105 transition-transform duration-300">
+            <img src="/toki.png" alt="Season 2 Thumbnail" className="object-cover w-full h-full" />
           </div>
         </button>
       </div>
