@@ -27,7 +27,7 @@ export default function Toki() {
                className="w-[120px] hover:scale-105 transition duration-300 cursor-pointer  "
                onClick={() => router.push("/")}
              ></img>
-            <div className="hidden sm:flex space-x-5 flex-wrap justify-end text-sm pr-4 sm:pr-10 md:pr-20 ">
+            <div className="hidden sm:flex space-x-5 flex-wrap justify-end text-sm pr-8 sm:pr-12 md:pr-16 ">
                 <a href="#section1" className="text-black hover:text-yellow-500 cursor-pointer text-base">Үйлчилгээ</a>
                 <a href="#section2" className="text-black hover:text-yellow-500 cursor-pointer text-base">Давуу тал</a>
                 <a href="#section3" className="text-black hover:text-yellow-500 cursor-pointer text-base">Мэдээ</a>
