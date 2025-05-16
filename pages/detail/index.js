@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import axios from "axios";
 
 export default function Json() {
     const router = useRouter();
@@ -33,6 +34,12 @@ export default function Json() {
 
         fetchAllData();
     }, []);
+
+    const handleSubmit = () => {
+        axios.post("https://mongol-api-rest.vercel.app/clothes", {
+            name: "khanbileg",
+        })
+    }
  
     const filteredData = data.filter(item => 
         item?.name?.toLowerCase().includes(search.toLowerCase())
@@ -40,6 +47,7 @@ export default function Json() {
     
     return (
         <div className="min-h-screen bg-gray-900 p-5 flex flex-col items-center text-gray-200">
+            <button className="bg-[#A38970] text-gray-300 font-medium rounded-lg shadow-md hover:bg-[#A38970] transition-transform transform hover:scale-105 ">шинээр харилцагч нэмэх</button>
             <div className="mb-8 flex items-center justify-between w-full max-w-4xl">
                 <input 
                     type="text"
