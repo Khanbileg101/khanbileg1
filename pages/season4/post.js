@@ -4,14 +4,18 @@ import { useState } from "react";
 export default function Post() {
   const [name, setName] = useState("");
   const [ovog, setOvog] = useState("");
+  const [email, setemail] = useState("");
+  const [age, setage] = useState("");
 
-  const handleSubmit = () => {
-    axios.post("http://localhost:8080/createUser", {
-      name,
-      ovog,
-    });
-  };
-  console.log(name, ovog);
+    const handleSubmit = () => {
+     axios.post("http://localhost:8080/createUsers", {
+       first_name: "khanbileg",
+       last_name: "Damdinsuren",
+       email: "khanbileg7@gmail.com",
+       age: 16,
+     });
+   };
+  console.log(name, ovog, email, age);
 
   return (
     <div className="ml-2">
@@ -40,6 +44,26 @@ export default function Post() {
             onChange={(e) => setOvog(e.target.value)}
             className="border rounded-lg bg-white ml-2 p-3 text-black"
             placeholder="Овог оруулна уу"
+          />
+        </div>
+        <div>
+          <label>email:</label>
+          <input
+            type="text"
+            value={email}
+            onChange={(e) => setemail(e.target.value)}
+            className="border rounded-lg bg-white ml-2 p-3 text-black"
+            placeholder="email оруулна уу"
+          />
+        </div>
+        <div>
+          <label>нас:</label>
+          <input
+            type="text"
+            value={age}
+            onChange={(e) => setage(e.target.value)}
+            className="border rounded-lg bg-white ml-2 p-3 text-black"
+            placeholder="age оруулна уу"
           />
         </div>
         <button
