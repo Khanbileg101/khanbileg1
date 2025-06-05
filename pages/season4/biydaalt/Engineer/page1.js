@@ -29,7 +29,7 @@ export default function Science() {
           </p>
 
           <div className="w-full flex justify-center">
-            <button onClick={() => router.push("/season4/biydaalt/page2")} className="bg-[#feb40d] w-[90%] py-6 rounded-full text-white text-4xl font-bold shadow-md hover:brightness-110 transition">
+            <button onClick={() => router.push("/season4/biydaalt/Engineer/page2")} className="bg-[#feb40d] w-[90%] py-6 rounded-full text-white text-4xl font-bold shadow-md hover:brightness-110 transition">
               Start
             </button>
           </div>
