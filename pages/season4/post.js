@@ -120,7 +120,7 @@ export default function Post() {
               </div>
               <button
                 onClick={() => handleDelete(user.id)}
-                className="rounded-lg bg-red-400 border p-2 text-white"
+                className="rounded-lg bg-red-400 border p-2 text-white" 
               >
                 Устгах
               </button>
