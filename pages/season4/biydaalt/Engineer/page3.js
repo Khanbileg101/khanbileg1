@@ -1,44 +1,47 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 
-export default function Science() {
+export default function Engineer() {
   const router = useRouter();
   return (
-    <div className="h-screen w-full flex items-center justify-center p-4">
-      <div className="w-full max-w-md h-full bg-[#F9BC5D] relative rounded-3xl overflow-hidden shadow-lg">
-        <div className="w-full flex justify-center mt-12">
+    <div className="min-h-screen w-full flex items-center justify-center p-2 sm:p-4">
+      <div className="w-full max-w-[390px] h-[100vh] sm:h-[844px] bg-[#F9BC5D] relative rounded-3xl overflow-hidden shadow-lg">
+        <div className="w-full flex justify-center mt-8 sm:mt-12">
           <img
             src="/image 3.png"
             alt="Science Illustration Above"
-            className="object-contain"
+            className="w-[90%] sm:w-auto object-contain"
           />
         </div>
 
-        <div className="text-white text-5xl font-bold text-center mt-4">
+        <div className="text-white text-4xl sm:text-5xl font-bold text-center mt-4">
           Engineer
         </div>
 
-        <button onClick={() => router.push("/season4/biydaalt//Engineer/page2")} className="absolute top-8 left-4 flex items-center justify-center">
-          <img src="/Group 28.png" alt="Back" className="w-10 h-10" />
+        <button 
+          onClick={() => router.push("/season4/biydaalt/Engineer/page2")} 
+          className="absolute top-6 sm:top-8 left-4 w-10 h-10 flex items-center justify-center"
+        >
+          <img src="/Group 28.png" alt="Back" className="w-8 sm:w-10 h-8 sm:h-10" />
         </button>
 
-        <div className="bg-white absolute bottom-0 w-full h-[70%] rounded-t-[40px] p-6 pt-8">
-          <div className="w-full mt-20 mb-10">
+        <div className="bg-white absolute bottom-0 w-full h-[70%] rounded-t-[40px] p-4 sm:p-6 pt-6 sm:pt-8">
+          <div className="w-full mt-8 sm:mt-12 mb-6 sm:mb-8">
             <img
               src="/image 23.png"
-              alt="Science illustration"
-              className=" h-[270px] object-contain mx-auto"
+              alt="Stack Carefully illustration"
+              className="w-[85%] h-[220px] sm:h-[300px] object-contain mx-auto"
             />
           </div>
 
-          <p className="text-[20px] text-black mt-24 mb-8 text-center leading-relaxed">
-          Step 2: Stack Carefully 🧱
+          <p className="text-[18px] sm:text-[20px] text-black mt-8 sm:mt-12 mb-6 sm:mb-8 text-center leading-relaxed">
+            Step 2: Stack Carefully 🧱
           </p>
 
-          <div className="w-full flex justify-center">
+          <div className="w-full flex justify-center mt-auto mb-8 sm:mb-12">
             <button
               onClick={() => router.push("/season4/biydaalt/Engineer/page4")}
-              className="bg-[#feb40d] w-[90%] py-6 rounded-full text-white text-4xl font-bold shadow-md hover:brightness-110 transition"
+              className="bg-[#feb40d] w-[90%] py-4 sm:py-6 rounded-full text-white text-3xl sm:text-4xl font-bold shadow-md hover:brightness-110 transition"
             >
               Continue
             </button>
