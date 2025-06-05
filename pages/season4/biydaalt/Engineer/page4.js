@@ -30,7 +30,7 @@ export default function Engineer() {
             <img
               src="/image 24.png"
               alt="Science illustration"
-              className="w-[90%] h-[280px] sm:h-[340px] object-contain mx-auto"
+              className="object-contain mx-auto"
             />
           </div>
 

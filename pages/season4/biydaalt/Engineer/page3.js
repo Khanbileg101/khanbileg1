@@ -30,7 +30,7 @@ export default function Engineer() {
             <img
               src="/image 23.png"
               alt="Stack Carefully illustration"
-              className="w-[85%] h-[220px] sm:h-[300px] object-contain mx-auto"
+              className="h-[220px] sm:h-[240px] object-contain mx-auto"
             />
           </div>
 

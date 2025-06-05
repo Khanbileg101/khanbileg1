@@ -4,17 +4,17 @@ import { useRouter } from "next/navigation";
 export default function Science() {
   const router = useRouter();
   return (
-    <div className="h-screen w-full flex items-center justify-center p-4">
-      <div className="w-full max-w-md h-full bg-[#4ac3cf] relative rounded-3xl overflow-hidden shadow-lg">
-        <div className="w-full flex justify-center mt-12">
+    <div className="min-h-screen w-full flex items-center justify-center p-2 sm:p-4">
+      <div className="w-full max-w-[390px] h-[100vh] sm:h-[844px] bg-[#4ac3cf] relative rounded-3xl overflow-hidden shadow-lg">
+        <div className="w-full flex justify-center mt-8 sm:mt-12">
           <img
             src="/Group 40.png"
             alt="Science Illustration Above"
-            className="object-contain"
+            className="w-[90%] sm:w-auto object-contain"
           />
         </div>
 
-        <div className="text-white text-5xl font-bold text-center mt-4">
+        <div className="text-white text-4xl sm:text-5xl font-bold text-center mt-4">
           Science
         </div>
 
@@ -40,7 +40,7 @@ Shapes can be round or pointy!
 
           <div className="w-full flex justify-center">
             <button
-              onClick={() => router.push("/season4/biydaalt/page4")}
+              onClick={() => router.push("/season4/biydaalt/Science/page4")}
               className="bg-[#feb40d] w-[90%] py-6 rounded-full text-white text-4xl font-bold shadow-md hover:brightness-110 transition"
             >
               Continue

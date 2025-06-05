@@ -73,6 +73,19 @@ export default function Home() {
             <img src="/post.png" alt="Season 2 Thumbnail" className="object-cover w-full h-full" />
           </div>
         </button>
+        <button
+          onClick={() => router.push("/season4/biydaalt/Science/page1")}
+          className="bg-gray-800 shadow-md rounded-2xl p-6 transition-shadow duration-300 group relative hover:ring-2 hover:ring-gray-500 hover:ring-offset-2 hover:ring-offset-gray-900"
+          aria-label="Go to Season 2"
+        >
+          <div className="absolute inset-0 rounded-2xl bg-gray-500 opacity-20 blur-lg group-hover:opacity-50 transition-opacity duration-300"></div>
+          <h2 className="relative text-2xl font-semibold mb-4 text-center text-gray-300 group-hover:text-gray-100 transition-colors">
+            Season 4: post
+          </h2>
+          <div className="relative bg-gray-700 w-full h-48 flex items-center justify-center rounded-xl overflow-hidden group-hover:scale-105 transition-transform duration-300">
+            <img src="/post.png" alt="Season 2 Thumbnail" className="object-cover w-full h-full" />
+          </div>
+        </button>
       </div>
     </div>
   );

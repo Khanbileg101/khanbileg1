@@ -11,7 +11,7 @@ export default function Science() {
         </div>
 
         <button 
-          onClick={() => router.push("/season4/biydaalt/biydaalt")}
+          onClick={() => router.push("/")}
           className="absolute top-6 sm:top-8 left-4 w-10 h-10 flex items-center justify-center"
         >
           <img src="/Group 28.png" alt="Back" className="w-8 sm:w-10 h-8 sm:h-10" />
